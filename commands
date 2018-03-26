@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AresBot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="images/discord.png" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+            </style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Banner -->
+					<section id="intro" class="main">
+            <h1>[] means "Required", {} means "Optional" and | means "Or".</h1>
+						<table>
+                            <tr>
+                              <th>Command</th>
+                              <th>Permission</th>
+                              <th>Description</th>
+                              <th>Usage</th>
+                            </tr>
+                            <tr>
+                              <td>8ball</td>
+                              <td>Everyone</td>
+                              <td>8ball a string.</td>
+                              <td>8ball | 8ball [String]</td>
+                            </tr>
+                            <tr>
+                              <td>Avatar</td>
+                              <td>Everyone</td>
+                              <td>Shows your or a mentioned user's avatar.</td>
+                              <td>avatar | avatar [Mention]</td>
+                            </tr>
+                            <tr>
+                              <td>Ban</td>
+                              <td>Moderator/Administrator</td>
+                              <td>Bans a mentioned user, with a reason if specified.</td>
+                              <td>ban [Mention] {Reason}</td>
+                            </tr>
+                            <tr>
+                              <td>Coin</td>
+                              <td>Everyone</td>
+                              <td>Flips a coin.</td>
+                              <td>coin</td>
+                            </tr>
+                            <tr>
+                              <td>Define</td>
+                              <td>Everyone</td>
+                              <td>Search UrbanDictionary for a string.</td>
+                              <td>define [String]</td>
+                            </tr>
+                            <tr>
+                              <td>ID</td>
+                              <td>Everyone</td>
+                              <td>Shows yours or a mentioned user's ID.</td>
+                              <td>id | id [Mention]</td>
+                            </tr>
+                            <tr>
+                              <td>Invite</td>
+                              <td>Everyone</td>
+                              <td>Gives the invite for the bot.</td>
+                              <td>invite</td>
+                            </tr>
+                            <tr>
+                              <td>Kick</td>
+                              <td>Moderator/Administrator</td>
+                              <td>Kicks a mentioned user, with a reason if specified.</td>
+                              <td>kick [Mention] {Reason}</td>
+                            </tr>
+                            <tr>
+                              <td>Magik</td>
+                              <td>Everyone</td>
+                              <td>Gives magik to yours or a mentioned user's avatar.</td>
+                              <td>magik | magik [Mention]</td>
+                            </tr>
+                            <tr>
+                              <td>Mute</td>
+                              <td>Moderator/Administrator</td>
+                              <td>Mutes a mentioned user, with a reason if specified.</td>
+                              <td>mute [Mention] {Reason}</td>
+                            </tr>
+                            <tr>
+                              <td>Ping</td>
+                              <td>Everyone</td>
+                              <td>Checks the latency of the bot.</td>
+                              <td>ping</td>
+                            </tr>
+                            <tr>
+                              <td>Poll</td>
+                              <td>Everyone</td>
+                              <td>Makes a poll, people can vote 👍 or 👎.</td>
+                              <td>poll [String]</td>
+                            </tr>
+                            <tr>
+                              <td>Setprefix</td>
+                              <td>Administrator</td>
+                              <td>Changes the prefix for the server.</td>
+                              <td>setprefix [String]</td>
+                            </tr>
+                            <tr>
+                              <td>Softban</td>
+                              <td>Moderator/Administrator</td>
+                              <td>Softbans a mentioned user, with a reason if specified.</td>
+                              <td>softban [Mention] {Reason}</td>
+                            </tr>
+                            <tr>
+                              <td>Stats</td>
+                              <td>Everyone</td>
+                              <td>Gives some information about the bot.</td>
+                              <td>stats</td>
+                            </tr>
+                            <tr>
+                              <td>Trigger</td>
+                              <td>Everyone</td>
+                              <td>Adds the trigger banner to yours or a mentioned user's avatar.</td>
+                              <td>poll [String]</td>
+                            </tr>
+                            <tr>
+                              <td>Unmute</td>
+                              <td>Moderator/Administrator</td>
+                              <td>Unmutes a mentioned user, with a reason if specified.</td>
+                              <td>unmute [Mention] {Reason}</td>
+                            </tr>
+                            <tr>
+                              <td>Uptime</td>
+                              <td>Everyone</td>
+                              <td>Checks the uptime of the bot.</td>
+                              <td>uptime</td>
+                            </tr>
+                            <tr>
+                              <td>Userinfo</td>
+                              <td>Everyone</td>
+                              <td>Shows information about yours or a mentioned user..</td>
+                              <td>userinfo | userinfo [Mention]</td>
+                            </tr>
+                            <tr>
+                              <td>Why</td>
+                              <td>Everyone</td>
+                              <td>Gives a random question.</td>
+                              <td>why</td>
+                            </tr>
+                          </table>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; AresBot</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
