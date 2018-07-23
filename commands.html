@@ -13,14 +13,6 @@
                 border-collapse: collapse;
                 width: 100%;
             }
-	    td, th {
--                border: 1px solid #dddddd;
--                text-align: left;
--                padding: 8px;
--            }
--            tr:nth-child(even) {
--                background-color: #ffffff;
--            }
              </style>
 	</head>
 	<body>
@@ -35,155 +27,275 @@
             <h1>[] means "Required", {} means "Optional" and | means "Or".</h1>
 						<table>
                             <tr>
-                              <td>Command</th>
-                              <td>Permission</th>
-                              <td>Description</th>
-                              <td>Usage</th>
+                              <td>Command</td>
+                              <td>Permission</td>
+                              <td>Description</td>
+                              <td>Usage</td>
                             </tr>
                             <tr>
                               <td></th>
                               <td></th>
                               <td></th>
-                              <td></th>
-                            </tr>
-                            <tr>
-                              <td>8ball</td>
-                              <td>Everyone</td>
-                              <td>8ball a string.</td>
-                              <td>8ball | 8ball [String]</td>
-                            </tr>
-                            <tr>
-                              <td>Avatar</td>
-                              <td>Everyone</td>
-                              <td>Shows your or a mentioned user's avatar.</td>
-                              <td>avatar | avatar [Mention]</td>
-                            </tr>
-                            <tr>
-                              <td>Ban</td>
-                              <td>Moderator/Administrator</td>
-                              <td>Bans a mentioned user, with a reason if specified.</td>
-                              <td>ban [Mention] {Reason}</td>
-                            </tr>
-                            <tr>
-                              <td>Cat</td>
-                              <td>Everyone</td>
-                              <td>Displays a random cat image.</td>
-                              <td>cat</td>
-                            </tr>
-                            <tr>
-                              <td>Changelog</td>
-                              <td>Everyone</td>
-                              <td>Gives the latest changelog and version.</td>
-                              <td>changelog</td>
-                            </tr>
-                            <tr>
-                              <td>Coin</td>
-                              <td>Everyone</td>
-                              <td>Flips a coin.</td>
-                              <td>coin</td>
-                            </tr>
-                            <tr>
-                              <td>Define</td>
-                              <td>Everyone</td>
-                              <td>Search UrbanDictionary for a string.</td>
-                              <td>define [String]</td>
-                            </tr>
-                              <td>Dog</td>
-                              <td>Everyone</td>
-                              <td>Displays a random dog image.</td>
-                              <td>dog</td>
-                            </tr>
-                            <tr>
-                              <td>ID</td>
-                              <td>Everyone</td>
-                              <td>Shows yours or a mentioned user's ID.</td>
-                              <td>id | id [Mention]</td>
-                            </tr>
-			    <tr>
-                              <td>Illuminati</td>
-                              <td>Everyone</td>
-                              <td>Adds a little illuminati icon to yours or a mentioned user's avatar.</td>
-                              <td>illuminati | illuminati [Mention]</td>
-                            </tr>
-                            <tr>
-                              <td>Invite</td>
-                              <td>Everyone</td>
-                              <td>Gives the invite for the bot.</td>
-                              <td>invite</td>
-                            </tr>
-                            <tr>
-                              <td>Kick</td>
-                              <td>Moderator/Administrator</td>
-                              <td>Kicks a mentioned user, with a reason if specified.</td>
-                              <td>kick [Mention] {Reason}</td>
-                            </tr>
-                            <tr>
-                              <td>Magik</td>
-                              <td>Everyone</td>
-                              <td>Gives magik to yours or a mentioned user's avatar.</td>
-                              <td>magik | magik [Mention]</td>
-                            </tr>
-                            <tr>
-                              <td>Mute</td>
-                              <td>Moderator/Administrator</td>
-                              <td>Mutes a mentioned user, with a reason if specified.</td>
-                              <td>mute [Mention] {Reason}</td>
-                            </tr>
-                            <tr>
-                              <td>Ping</td>
-                              <td>Everyone</td>
-                              <td>Checks the latency of the bot.</td>
-                              <td>ping</td>
-                            </tr>
-                            <tr>
-                              <td>Poll</td>
-                              <td>Everyone</td>
-                              <td>Makes a poll, people can vote 👍 or 👎.</td>
-                              <td>poll [String]</td>
-                            </tr>
-                            <tr>
-                              <td>Softban</td>
-                              <td>Moderator/Administrator</td>
-                              <td>Softbans a mentioned user, with a reason if specified.</td>
-                              <td>softban [Mention] {Reason}</td>
-                            </tr>
-                            <tr>
-                              <td>Stats</td>
-                              <td>Everyone</td>
-                              <td>Gives some information about the bot.</td>
-                              <td>stats</td>
-                            </tr>
-                            <tr>
-                              <td>Trigger</td>
-                              <td>Everyone</td>
-                              <td>Adds the trigger banner to yours or a mentioned user's avatar.</td>
-                              <td>trigger | trigger [Mention]</td>
-                            </tr>
-                            <tr>
-                              <td>Unmute</td>
-                              <td>Moderator/Administrator</td>
-                              <td>Unmutes a mentioned user, with a reason if specified.</td>
-                              <td>unmute [Mention] {Reason}</td>
-                            </tr>
-                            <tr>
-                              <td>Uptime</td>
-                              <td>Everyone</td>
-                              <td>Checks the uptime of the bot.</td>
-                              <td>uptime</td>
-                            </tr>
-                            <tr>
-                              <td>Userinfo</td>
-                              <td>Everyone</td>
-                              <td>Shows information about yours or a mentioned user.</td>
-                              <td>userinfo | userinfo [Mention]</td>
-                            </tr>
-                            <tr>
-                              <td>Why</td>
-                              <td>Everyone</td>
-                              <td>Gives a random question.</td>
-                              <td>why</td>
-                            </tr>
-                          </table>
+															<td></th>
+														</tr>
+														<a href="#moderation" class="button big">Moderation</a>
+														&nbsp;
+														<a href="#image" class="button big">Image</a>
+														&nbsp;
+														<a href="#fun" class="button big">Fun</a>
+														&nbsp;
+														<a href="#information" class="button big">Information</a>
+														&nbsp;
+														<a href="#config" class="button big">Config</a>
+													<br><br />
+													</table>
+													<span id="moderation">
+													<h1>Moderation</h1>
+													<table>
+															<tr>
+																	<td>Ban</td>
+																	<td>Moderator/Administrator</td>
+																	<td>Bans a mentioned user, with a reason if specified.</td>
+																	<td>ban [Mention] {Reason}</td>
+																</tr>
+															<tr>
+																	<td>Delete</td>
+																	<td>Moderator/Administrator</td>
+																	<td>Deletes a certain amount of messages.</td>
+																	<td>delete | delete [Number]<td>
+																</tr>
+															<tr>
+																	<td>Kick</td>
+																	<td>Moderator/Administrator</td>
+																	<td>Kicks a mentioned user, with a reason if specified.</td>
+																	<td>kick [Mention] {Reason}</td>
+																</tr>
+															<tr>
+																	<td>Mute</td>
+																	<td>Moderator/Administrator</td>
+																	<td>Mutes a mentioned user, with a reason if specified.</td>
+																	<td>mute [Mention] {Reason}</td>
+																</tr>
+															<tr>
+                              		<td>Softban</td>
+                              		<td>Moderator/Administrator</td>
+                              		<td>Bans a mentioned user, then unbans, with a reason if specified.</td>
+                              		<td>softban [Mention] {Reason}</td>
+                            		</tr>
+															<tr>
+                              		<td>Unmute</td>
+                              		<td>Moderator/Administrator</td>
+                              		<td>Unmutes a mentioned user, with a reason if specified.</td>
+                              		<td>unmute [Mention] {Reason}</td>
+                            		</tr>
+															<tr>
+																	<td>Warn</td>
+																	<td>Moderator/Administrator</td>
+																	<td>Gives a warning to a mentioned user, with a reason if specified.</td>
+																	<td>warn [Mention] {Reason}</td>
+																</tr>
+													</span>
+													<br><br />
+													</table>
+													<span id="image">
+													<h1>Image</h1>
+													<table>
+															<tr>
+																	<td>Beautiful</td>
+																	<td>Everyone</td>
+																	<td>A canvas command.</td>
+																	<td>beautiful | beautiful [Mention]</td>
+																</tr>
+															<tr>
+																	<td>Bob</td>
+																	<td>Everyone</td>
+																	<td>A canvas command.</td>
+																	<td>bob | bob [Mention]</td>
+																</tr>
+															<tr>
+																	<td>Dog</td>
+																	<td>Everyone</td>
+																	<td>Displays a random dog image.</td>
+																	<td>dog</td>
+																</tr>
+															<tr>
+																	<td>Illuminati</td>
+																	<td>Everyone</td>
+																	<td>Adds a illuminati icon to yours or a mention user's avatar.</td>
+																	<td>illuminati | illuminati [Mention]</td>
+																</tr>
+															<tr>
+																	<td>Magik</td>
+																	<td>Everyone</td>
+																	<td>Gives magik to yours or a mentioned user's avatar.</td>
+																	<td>magik | magik [Mention]</td>
+																</tr>
+															<tr>
+																	<td>ToBeContinued</td>
+																	<td>Everyone</td>
+																	<td>Adds a ToBeContinued banner to yours or a mentioned user's avatar.</td>
+																	<td>beautiful | beautiful [Mention]</td>
+																</tr>
+															<tr>
+																	<td>Trigger</td>
+																	<td>Everyone</td>
+																	<td>Adds a triggered banner to yours or a mentioned user's avatar.</td>
+																	<td>trigger | trigger [Mention]</td>
+																</tr>
+															<tr>
+																	<td>Wasted</td>
+																	<td>Everyone</td>
+																	<td>Adds a wasted banner to yours or a mentioned user's avatar.</td>
+																	<td>wasted | wasted [Mention]</td>
+																</tr>
+													</span>
+													<br><br />
+													</table>
+													<span id="fun">
+													<h1>Fun</h1>
+													<table>
+															<tr>
+																	<td>8Ball</td>
+																	<td>Everyone</td>
+																	<td>8ball a string.</td>
+																	<td>8ball | 8ball [String]</td>
+																</tr>
+															<tr>
+																	<td>Coin</td>
+																	<td>Everyone</td>
+																	<td>Flips a coin.</td>
+																	<td>coin</td>
+																</tr>
+															<tr>
+																	<td>Kill</td>
+																	<td>Everyone</td>
+																	<td>"Kill" a mentioned user.</td>
+																	<td>kill [Mention]</td>
+																</tr>
+															<tr>
+																	<td>Meme</td>
+																	<td>Everyone</td>
+																	<td>Displays a meme from /r/dankmemes.</td>
+																	<td>meme</td>
+																</tr>
+															<tr>
+																	<td>Poll</td>
+																	<td>Everyone</td>
+																	<td>Makes a poll where users can vote with thumbs up or thumbs down.</td>
+																	<td>poll [String]</td>
+																</tr>
+															<tr>
+																	<td>RPS</td>
+																	<td>Everyone</td>
+																	<td>Play Rock Paper Scissors with AresBot.</td>
+																	<td>rps</td>
+																</tr>
+															<tr>
+																	<td>Why</td>
+																	<td>Everyone</td>
+																	<td>Gives a random question.</td>
+																	<td>why</td>
+																</tr>
+													</span>
+													<br><br />
+													</table>
+													<span id="information">
+													<h1>Information</h1>
+													<table>
+															<tr>
+																	<td>Avatar</td>
+																	<td>Everyone</td>
+																	<td>Displays yours or a mentioned user's avatar.</td>
+																	<td>avatar | avatar [Mention]</td>
+																</tr>
+															<tr>
+																	<td>Changelog</td>
+																	<td>Everyone</td>
+																	<td>Gives the latest changelog.</td>
+																	<td>changelog</td>
+																</tr>
+															<tr>
+																	<td>Commands</td>
+																	<td>Everyone</td>
+																	<td>Gives link to website for the commands.</td>
+																	<td>commands</td>
+																</tr>
+															<tr>
+																	<td>Define</td>
+																	<td>Everyone</td>
+																	<td>Searches UrbanDictionary for a word.</td>
+																	<td>define [String]</td>
+																</tr>
+															<tr>
+																	<td>Help</td>
+																	<td>Everyone</td>
+																	<td>Gives help information.</td>
+																	<td>beautiful | beautiful [Mention]</td>
+																</tr>
+																<tr>
+																		<td>ID</td>
+																		<td>Everyone</td>
+																		<td>Gives your or a mentioned user's ID.</td>
+																		<td>id | id [Mention]</td>
+																	</tr>
+															<tr>
+																	<td>Ping</td>
+																	<td>Everyone</td>
+																	<td>Shows the reponse time for the bot.</td>
+																	<td>ping</td>
+																</tr>
+															<tr>
+																	<td>Serverinfo</td>
+																	<td>Everyone</td>
+																	<td>Gives light information about the server.</td>
+																	<td>serverinfo</td>
+																</tr>
+															<tr>
+																	<td>Serverinfo-Detailed</td>
+																	<td>Everyone</td>
+																	<td>Gives detailed information about the server.</td>
+																	<td>serverinfo-detailed</td>
+																</tr>
+															<tr>
+																	<td>Stats</td>
+																	<td>Everyone</td>
+																	<td>Gives AresBot's stats.</td>
+																	<td>stats</td>
+																</tr>
+															<tr>
+																	<td>Status</td>
+																	<td>Everyone</td>
+																	<td>Shows how many members are Online, Idle, DND or Offline.</td>
+																	<td>status</td>
+																</tr>
+															<tr>
+																	<td>Uptime</td>
+																	<td>Everyone</td>
+																	<td>Gives Uptime of AresBot.</td>
+																	<td>uptime</td>
+																</tr>
+															<tr>
+																	<td>Userinfo</td>
+																	<td>Everyone</td>
+																	<td>Gives detailed information about yours or a mentioned user.</td>
+																	<td>userinfo | userinfo [Mention]</td>
+																</tr>
+													</span>
+													<br><br />
+													</table>
+													<span id="config">
+													<h1>Configuration</h1>
+													<table>
+															<tr>
+																	<td>Set</td>
+																	<td>Moderator/Administrator</td>
+																	<td>Sets prefix/mod-logs for the server.</td>
+																	<td>set prefix [String] | set mod-logs [String]</td>
+																</tr>
+													</span>
+													<br><br />
+													</table>
+
 					</section>
 
 				<!-- Footer -->
